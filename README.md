@@ -11,3 +11,11 @@ SF CPQ does not offer a method to ensure the users click "Refresh Prices" as to 
 * Implement validations that prevent generating a quote document or submitting an order unless the expiration date is corrected.
 * Implement a flag which prevents quotes at certain states such as ordered to prevent the QCP scripts from executing.
 * Add expiration date to to field history tracking to log when the refresh occurred.
+
+
+
+**Quote Line Group Quote Calculator Plugin (QCP):**
+
+Example given is to correct behavior of the Optional flag on quote line group object, which incorrectly reports non-zero amounts when all of the lines are optional and the group is optional. 
+
+Includes script to apply and release values in the Target Amount fields so that changes to line items do not continue to result in the same Target Amount without user reassigning the target prices.
